@@ -40,7 +40,7 @@ class _UserFormState extends State<UserForm> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text("Form user"),
+        title: Text("Agregar estudiante PPP"),
         actions: <Widget>[
           IconButton(
             icon: Icon(Icons.save),
@@ -79,17 +79,17 @@ class _UserFormState extends State<UserForm> {
                   }
                 },
                 onSaved: (value) => _formData['name'] = value,
-                decoration: InputDecoration(labelText: 'Name'),
+                decoration: InputDecoration(labelText: 'Nombres y Apellidos: '),
               ),
               TextFormField(
                 initialValue: _formData['email'],
                 onSaved: (value) => _formData['email'] = value,                
-                decoration: InputDecoration(labelText: 'e-mail'),
+                decoration: InputDecoration(labelText: 'Correo Institucional: '),
               ),
               TextFormField(
                 initialValue: _formData['avatarUrl'],
                 onSaved: (value) => _formData['avatarUrl'] = value,
-                decoration: InputDecoration(labelText: 'Avatar URL'),
+                decoration: InputDecoration(labelText: 'Link Documentos Drive: '),
               ),
             ],
           )

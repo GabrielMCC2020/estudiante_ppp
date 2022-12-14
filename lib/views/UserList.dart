@@ -12,7 +12,7 @@ class UserList extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('User list management'),
+        title: Text('Lista de Estudiantes PPP'),
         actions: <Widget>[
           IconButton(icon: Icon(Icons.add),
           onPressed: () { 

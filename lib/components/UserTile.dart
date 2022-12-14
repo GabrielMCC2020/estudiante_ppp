@@ -37,8 +37,8 @@ class UserTile extends StatelessWidget {
                 showDialog(
                   context: context,
                   builder: (ctx) => AlertDialog(
-                    title: Text('Confirm delete'),
-                    content: Text('Are you sure?'),
+                    title: Text('Eliminar'),
+                    content: Text('Estas seguro?'),
                     actions: <Widget>[
                       TextButton(
                         onPressed: (){
@@ -50,7 +50,7 @@ class UserTile extends StatelessWidget {
                         onPressed: (){
                           Navigator.of(context).pop(true);
                         },
-                        child: Text('Yes'),
+                        child: Text('Si'),
                       ),
                     ],
                   ), 
